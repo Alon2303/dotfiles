@@ -1,0 +1,11 @@
+session_name: node
+windows:
+- window_name: dev
+  layout: tiled
+  panes:
+    - shell_command:
+        - vim
+      focus: true
+    - shell_command:
+        - clear
+        - node
