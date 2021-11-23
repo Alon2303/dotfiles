@@ -1,0 +1,12 @@
+session_name: node
+windows:
+- window_name: dev
+  layout: tiled
+  panes:
+    - shell_command:
+        - cd ~/Documents/EWB_TOOLKIT/ewb_toolkit_be
+        - vim
+      focus: true
+    - shell_command:
+        - cd ~/Documents/EWB_TOOLKIT/ewb_toolkit_be
+        - node src/app
