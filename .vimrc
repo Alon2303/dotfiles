@@ -27,10 +27,12 @@ filetype plugin indent on
 " close NERDTree after a file is opened
  let g:NERDTreeQuitOnOpen=0
 " " show hidden files in NERDTree
- let NERDTreeShowHidden=0
+ let NERDTreeShowHidden=1
+let NERDTreeDirArrowExpandable="-"
+let NERDTreeDirArrowCollapsible="|"
 " " Toggle NERDTree
  nmap <silent> <leader>k :NERDTreeToggle<cr>
 " " expand to the path of the file in the current buffer
  nmap <silent> <leader>y :NERDTreeFind<cr>
  autocmd VimEnter * NERDTree
-nmap <leader>t :newtab<cr>
+nmap <leader>t :tabnew<cr>
