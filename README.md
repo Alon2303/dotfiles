@@ -14,3 +14,7 @@ zsh:
 
 .zshrc
 .zsh_history
+
+bash:
+
+.bashrc(fallback shell)
