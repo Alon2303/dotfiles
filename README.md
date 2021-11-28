@@ -7,4 +7,10 @@ vim:
 tmux:
 -------
 .tmux.conf
-Basic yaml configuration for node dev
+Basic yaml configuration for node dev(tmuxp)
+
+zsh:
+-------
+
+.zshrc
+.zsh_history
