@@ -109,3 +109,4 @@ alias vz="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
 alias envnode='tmuxp load node'
 alias cpdot="cp -r ~/.z ~/.zsh_history ~/.zshrc ~/.vimrc ~/.tmux.conf ~/.tmuxp/node.yaml ~/.oh-my-zsh ~/sys_config/System_Config/"
+alias gotodot="cd ~/sys_config/System_Config"
