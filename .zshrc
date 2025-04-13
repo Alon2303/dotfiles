@@ -2,19 +2,21 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/su6n3t/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
+export DISABLE_AUTO_TITLE='true'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+# ZSH_THEME="af-magic"
 
+ZSH_THEME=random
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME_RANDOM_CANDIDATES=( "3den" "apple" "awesomepanda" "clean" "candy" "amuse" "alanpeabody" "arrow" "bureau" "funky" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -70,7 +72,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(battery colored-man-pages git z zsh-autosuggestions)
+plugins=(battery colored-man-pages git z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,3 +112,8 @@ alias vrc="vim ~/.vimrc"
 alias envnode='tmuxp load node'
 alias cpdot="cp -r ~/.z ~/.zsh_history ~/.zshrc ~/.vimrc ~/.tmux.conf ~/.tmuxp/node.yaml ~/.oh-my-zsh ~/sys_config/System_Config/"
 alias gotodot="cd ~/sys_config/System_Config"
+alias go="tmuxp load ~/node.yaml"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

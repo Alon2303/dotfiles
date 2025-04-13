@@ -1,13 +1,9 @@
 session_name: node
 windows:
-- window_name: dev
+- window_name: test
   layout: tiled
   panes:
     - shell_command:
-        - cd ~/Documents/EWB_TOOLKIT/ewb_toolkit_be
-        - vim
+      - cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles
+      - vim Password-manager.cpp
       focus: true
-    - shell_command:
-        - cd ~/Documents/EWB_TOOLKIT/ewb_toolkit_be
-        - redis-server --daemonize yes
-        - npm start
