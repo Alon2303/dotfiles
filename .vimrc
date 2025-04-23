@@ -1,3 +1,4 @@
+source $VIMRUNTIME/defaults.vim
 syntax on
 
 " tabs
@@ -36,6 +37,5 @@ let NERDTreeDirArrowCollapsible="|"
  nmap <silent> <leader>y :NERDTreeFind<cr>
  autocmd VimEnter * NERDTree
 nmap <leader>t :tabnew<cr>
-source $VIMRUNTIME/defaults.vim
 
 
