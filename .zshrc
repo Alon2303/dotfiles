@@ -109,9 +109,7 @@ alias hs='history | grep'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias vz="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
-alias envnode='tmuxp load node'
-alias cpdot="cp -r ~/.z ~/.zsh_history ~/.zshrc ~/.vimrc ~/.tmux.conf ~/.tmuxp/node.yaml ~/.oh-my-zsh ~/sys_config/System_Config/"
-alias gotodot="cd ~/sys_config/System_Config"
+alias cpdot="cp -r ~/.zsh_history ~/.zshrc ~/.vimrc ~/.tmux.conf ~/.tmuxp/node.yaml ~" 
 alias go="tmuxp load ~/node.yaml"
 
 export NVM_DIR="$HOME/.nvm"

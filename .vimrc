@@ -25,7 +25,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 " close NERDTree after a file is opened
- let g:NERDTreeQuitOnOpen=0
+ let g:NERDTreeQuitOnOpen=1
 " " show hidden files in NERDTree
  let NERDTreeShowHidden=1
 let NERDTreeDirArrowExpandable="-"
@@ -36,3 +36,6 @@ let NERDTreeDirArrowCollapsible="|"
  nmap <silent> <leader>y :NERDTreeFind<cr>
  autocmd VimEnter * NERDTree
 nmap <leader>t :tabnew<cr>
+source $VIMRUNTIME/defaults.vim
+
+
