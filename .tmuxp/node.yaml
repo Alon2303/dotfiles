@@ -1,9 +1,0 @@
-session_name: node
-windows:
-- window_name: test
-  layout: tiled
-  panes:
-    - shell_command:
-      - cd ~/Documents/Projects/test
-      - vim index.ts
-      focus: true
