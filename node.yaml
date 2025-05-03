@@ -1,9 +1,10 @@
 session_name: node
 windows:
-- window_name: test
-  layout: tiled
-  panes:
-    - shell_command:
-      - cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles
-      - vim Password-manager.cpp
-      focus: true
+  - window_name: dev
+    layout: main-vertical
+    panes:
+      - shell_command: "cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles && vim Password-manager.cpp"
+  - window_name: logs
+    panes:
+      - shell_command: "tail -f logs/node.log"
+

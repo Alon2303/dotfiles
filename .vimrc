@@ -1,4 +1,3 @@
-source $VIMRUNTIME/defaults.vim
 syntax on
 
 " tabs
@@ -36,6 +35,6 @@ let NERDTreeDirArrowCollapsible="|"
 " " expand to the path of the file in the current buffer
  nmap <silent> <leader>y :NERDTreeFind<cr>
  autocmd VimEnter * NERDTree
+ colorscheme evening
+ set patchmode=.orig
 nmap <leader>t :tabnew<cr>
-
-
