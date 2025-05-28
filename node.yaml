@@ -8,5 +8,5 @@ session_name: 2-pane-vertical
 windows:
   - window_name: Development
     panes:
-      - cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles && vim Password-manager.cpp
-      - cd ~/Documents/Projects/pwd-mgr
+      - cd ~/Documents/Projects
+      - cd ~/Documents/Projects
