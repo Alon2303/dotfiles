@@ -1,10 +1,12 @@
-session_name: node
+#session_name: node
+#windows:
+#  - window_name: dev
+#    layout: main-vertical
+#    panes:
+#      - shell_command: "cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles && vim Password-manager.cpp"
+session_name: 2-pane-vertical
 windows:
-  - window_name: dev
-    layout: main-vertical
+  - window_name: Development
     panes:
-      - shell_command: "cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles && vim Password-manager.cpp"
-  - window_name: logs
-    panes:
-      - shell_command: "tail -f logs/node.log"
-
+      - cd ~/Documents/Projects/pwd-mgr/src/ResourceFiles && vim Password-manager.cpp
+      - cd ~/Documents/Projects/pwd-mgr

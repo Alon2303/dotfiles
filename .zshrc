@@ -33,14 +33,14 @@ function h() {
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="af-magic"
+ ZSH_THEME="amuse"
 
-ZSH_THEME=random
+# ZSH_THEME=random
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "3den" "apple" "awesomepanda" "clean" "candy" "amuse" "alanpeabody" "arrow" "bureau" "funky" )
+# ZSH_THEME_RANDOM_CANDIDATES=("amuse")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -96,7 +96,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "3den" "apple" "awesomepanda" "clean" "candy" "amu
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(battery colored-man-pages git docker docker-compose dotenv kubectl nodenv postgres sudo vundle virtualenv localstack debian )
+plugins=(battery colored-man-pages git docker docker-compose dotenv kubectl nodenv postgres sudo vundle virtualenv localstack debian python virtualenv )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -134,10 +134,17 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 alias vz="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
 alias envnode='tmuxp load node'
-alias cpdot="cp -r ~/.z ~/.zsh_history ~/.zshrc ~/.vimrc ~/.tmux.conf ~/.tmuxp/node.yaml ~/.oh-my-zsh ~/sys_config/System_Config/"
-alias gotodot="cd ~/sys_config/System_Config"
 alias go="tmuxp load ~/node.yaml"
+alias blank="tmuxp load ~/node.yaml"
 alias backup="cp -v node.yaml .vimrc .zshrc .tmux.conf ~/Documents/Projects/dotfiles"
+alias gl="git log --oneline"
+alias verify_venv="echo $VIRTUAL_ENV && which python"
+alias create_venv="virtualenv -p python3 venv"
+alias activate_venv="source venv/bin/activate"
+alias vscode="/mnt/c/Users/user/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe"
+alias freeze="pip3 freeze > requirements.txt"
+alias proj="cd ~/Documents/Projects"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
