@@ -42,7 +42,7 @@ let NERDTreeDirArrowCollapsible="|"
 " " expand to the path of the file in the current buffer
  nmap <silent> <leader>y :NERDTreeFind<cr>
  autocmd VimEnter * NERDTree
- colorscheme desert
+ colorscheme torte
 nmap <leader>t :tabnew<cr>
 if executable('pylsp')
     " pip install python-lsp-server
