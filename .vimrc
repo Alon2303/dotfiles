@@ -1,5 +1,5 @@
 syntax on
-
+set number
 " tabs
 set showtabline=2
 set tabstop=4
@@ -20,6 +20,7 @@ set foldmethod=indent
 set nocompatible
 filetype on
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 Plugin 'scrooloose/nerdtree'
 Plugin 'prettier/vim-prettier', {
@@ -30,6 +31,7 @@ Plugin 'mattn/vim-lsp-settings'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 call vundle#end()
+
 filetype plugin indent on
 " close NERDTree after a file is opened
  let g:NERDTreeQuitOnOpen=1
@@ -44,6 +46,7 @@ let NERDTreeDirArrowCollapsible="|"
  autocmd VimEnter * NERDTree
  colorscheme torte
 nmap <leader>t :tabnew<cr>
+
 if executable('pylsp')
     " pip install python-lsp-server
     au User lsp_setup call lsp#register_server({
@@ -70,9 +73,9 @@ function! s:on_lsp_buffer_enabled() abort
     nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
     nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
 
-    let g:lsp_format_sync_timeout=1000
+    let g:lsp_format_sync_timeoutcs=200
 	let g:lsp_semantic_enabled=1
-    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+" "   autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
     
     " refer to doc to add more commands
 endfunction
