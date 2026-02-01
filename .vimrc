@@ -1,5 +1,6 @@
 syntax on
 set number
+set incsearch
 " tabs
 set showtabline=2
 set tabstop=4
@@ -18,6 +19,7 @@ set foldlevelstart=10
 nnoremap <space> za
 set foldmethod=indent
 set nocompatible
+set hlsearch
 filetype on
 set rtp+=~/.vim/bundle/Vundle.vim
 

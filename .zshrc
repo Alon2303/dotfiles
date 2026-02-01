@@ -136,7 +136,7 @@ alias vrc="vim ~/.vimrc"
 alias envnode='tmuxp load node'
 alias go="tmuxp load ~/node.yaml"
 alias blank="tmuxp load ~/node.yaml"
-alias backup="cp -v node.yaml .vimrc .zshrc .tmux.conf setup_env.sh ~/Documents/Projects/dotfiles"
+alias backup="cp -v node.yaml .vimrc .zshrc .tmux.conf setup_env.sh env-setup"
 alias gl="git log --oneline"
 alias verify_venv="echo $VIRTUAL_ENV && which python"
 alias create_venv="virtualenv -p python3 venv"
@@ -149,3 +149,4 @@ alias proj="cd ~/Documents/Projects"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export node="/home/subnet/.nvm/versions/node/v25.5.0/bin/node"
